@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="UTF-8">
+	<title>Performance</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/stylesheet/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.js"></script>
+	<script type="text/javascript">
+		$( document ).ready(function() {
+			$('.ui.dropdown')
+			  .dropdown()
+			;
+		});
+		function showDiv() {
+	  	document.getElementById('dfilter').style.display = "block";
+		}
+		function hideDiv() {
+	  	document.getElementById('dfilter').style.display = "none";
+		}
+	</script>
+  </head>
+  <body id="purchase">
+  	<!-- following menu -->
+  	<div class="ui inverted mini top fixed header-transparent secondary menu">
+		  <div class="ui container">
+		  
+		    <div class="right menu">
+		      <div class="item">
+		        <div class="ui icon input">
+		          <input type="text" placeholder="Search or type a command (Ctrl + G)">
+		          <i class="search link icon"></i>
+		        </div>
+			  	</div>
+		      <div class="ui dropdown item">
+				    Demo User
+				    <i class="dropdown icon"></i>
+				    <div class="menu">
+				      <div class="item">Set Desktop Icons</div>
+				      <div class="item">My Settings</div>
+				      <div class="item">Reload</div>
+				      <div class="item">View Website</div>
+				      <hr/>
+				      <div class="item">Logout</div>
+				    </div>
+				  </div>
+		      <div class="ui dropdown item">
+				    Help
+				    <i class="dropdown icon"></i>
+				    <div class="menu">
+				      <div class="item">Documentation</div>
+				      <div class="item">User Forum</div>
+				      <div class="item">Chat</div>
+				      <div class="item">Report an Issue</div>
+				      <hr/>
+				      <div class="item">About</div>
+				    </div>
+				  </div>
+		    </div>
+		  </div>
+		</div>
+
+		<!-- container -->
+		<div class="pusher">
+			<div class="ui grid">
+				<div class="one column wide"></div>
+				<div class="fourteen wide column">
+					<h2 class="ui stacked segment"> Performance</h2>
+				</div>
+			</div>
+			<div class="ui grid">
+				<div class="one wide column"></div>
+				<div class="three wide column">
+					<div class="ui secondary vertical menu">
+						<div class="ui dropdown item">
+						    Purchasing
+						    <i class="active dropdown icon"></i>
+						    <div class="menu">
+						      <a class="item" href="purchase_quotation.html"><i class="edit icon"></i> Purchase Quotation</a>
+						      <a class="item" href="purchase_order.html"><i class="globe icon"></i> Purchase Order</a>
+						      <a class="item"><i class="settings icon"></i> Purchase Return</a>
+						      <a class="item"><i class="settings icon"></i> Direct Purchase</a>
+						      <a class="item"><i class="settings icon"></i> Purchase Order Update</a>
+						    </div>
+						</div>
+						<div class="ui dropdown item">
+						    Inventory
+						    <i class="dropdown icon"></i>
+						    <div class="menu">
+						      <a class="item" href="receiving.html"><i class="edit icon"></i> Inventory Receives</a>
+						      <a class="item"><i class="edit icon"></i> Inventory Issued</a>
+						      <a class="item"><i class="edit icon"></i> Inventory Order</a>
+						      <a class="item"><i class="edit icon"></i> Delivery Order</a>
+						      <a class="item"><i class="edit icon"></i> Delivery Receives</a>
+						      <a class="item"><i class="edit icon"></i> Inventory Adjusment</a>
+						      <a class="item"><i class="edit icon"></i> Purchase Request</a>
+						    </div>
+						</div>
+						<div class="ui dropdown item">
+						    Production
+						    <i class="dropdown icon"></i>
+						    <div class="menu">
+						      <a class="item"><i class="edit icon"></i> Meal Menu</a>
+						      <a class="item"><i class="edit icon"></i> Standard Recipe</a>
+						      <a class="item"><i class="edit icon"></i> Base Recipe</a>
+						      <a class="item"><i class="edit icon"></i> Production Plan</a>
+						      <a class="item"><i class="edit icon"></i> Production Order</a>
+						      <a class="item"><i class="edit icon"></i> Blanket Material Order</a>
+						      <a class="item"><i class="globe icon"></i> Material Order</a>
+						      <a class="item"><i class="settings icon"></i> Material Request </a>
+						      <a class="item"><i class="settings icon"></i> Meals Count</a>
+						    </div>
+						</div>
+						<div class="ui dropdown item">
+						    Reports
+						    <i class="dropdown icon"></i>
+						    <div class="menu">
+							    <div class="ui dropdown item">
+							      	<i class="dropdown icon"></i>
+							    	Purchasing Reports
+							      	<div class="menu">
+							      		<a class="item"><i class="globe icon"></i> Blanked PO</a>
+							      		<a class="item"><i class="globe icon"></i> Price Rating</a>
+							      		<a class="item"><i class="globe icon"></i> Supplier Rating</a>
+							      		<a class="item"><i class="globe icon"></i> PO by Volume</a>
+							      		<a class="item"><i class="globe icon"></i> PR-PO-RR</a>
+							      		<a class="item"><i class="globe icon"></i> PO-Rcv-Supplier</a>
+							      		<a class="item"><i class="globe icon"></i> PO-Rcv-Recap</a>
+							      		<a class="item"><i class="globe icon"></i> PO-IR-Recap</a>
+							      		<a class="item"><i class="globe icon"></i> Purchase Detail</a>
+						      		</div>
+						      	</div>
+						      	<div class="ui dropdown item">
+							      	<i class="dropdown icon"></i>
+							    	Inventory Reports
+							      	<div class="menu">
+							      		<a class="item"><i class="globe icon"></i> Receiving Report</a>
+							      		<a class="item"><i class="globe icon"></i> MR-II Detail Report</a>
+							      		<a class="item"><i class="globe icon"></i> On-Time Delivery</a>
+							      		<a class="item"><i class="globe icon"></i> Outstanding Report</a>
+							      		<a class="item"><i class="globe icon"></i> Outstanding DO Report</a>
+							      		<a class="item"><i class="globe icon"></i> PR-PO-Detail Report</a>
+							      		<a class="item"><i class="globe icon"></i> DO-DR-Detail Report</a>
+							      		<a class="item"><i class="globe icon"></i> Inventory Issued Report</a>
+							      		<a class="item"><i class="globe icon"></i> Inventory Adjusment</a>
+							      		<a class="item"><i class="globe icon"></i> Slow Moving Report</a>
+							      		<a class="item"><i class="globe icon"></i> Inventory Movement</a>
+							      		<a class="item"><i class="globe icon"></i> Inventory Reject</a>
+							      		<a class="item"><i class="globe icon"></i> In-Spec KPI</a>
+							      		<a class="item"><i class="globe icon"></i> Inventory Stock Card</a>
+							      		<a class="item"><i class="globe icon"></i> Inventory Stock</a>
+						      		</div>
+						      	</div>
+						      	<div class="ui dropdown item">
+							    	Production Reports
+							      	<i class="dropdown icon"></i>
+							      	<div class="menu">
+							      		<a class="item"><i class="globe icon"></i>MO-PR/DO Report</a>
+							      		<a class="item"><i class="globe icon"></i>Internal Production Analysis</a>
+							      		<a class="item"><i class="globe icon"></i>Summary Menu Cost</a>
+							      		<a class="item"><i class="globe icon"></i>Cost Variance Analysis</a>
+							      		<a class="item"><i class="globe icon"></i>Internal Menu Cost</a>
+							      		<a class="item"><i class="globe icon"></i>Cusotmer Menu Cost</a>
+							      		<a class="item"><i class="globe icon"></i>Production Menu Cost</a>
+							      		<a class="item"><i class="globe icon"></i>Internal Recipe Cost</a>
+							      		<a class="item"><i class="globe icon"></i>Customer Recipe Cost</a>
+							      		<a class="item"><i class="globe icon"></i>Production Recipe Cost</a>
+							      		<a class="item"><i class="globe icon"></i>Summary Menu Cost</a>
+							      		<a class="item"><i class="globe icon"></i>Prodution Deviation</a>
+							      		<a class="item"><i class="globe icon"></i>Inventory on Kitchen</a>
+						      		</div>
+						      	</div>
+						    </div>
+						</div>
+						<div class="ui dropdown item">
+						    Master Data
+						    <i class="dropdown icon"></i>
+						    <div class="menu">
+						      <a class="item"><i class="edit icon"></i> Customer</a>
+						      <a class="item"><i class="globe icon"></i> Supplier </a>
+						      <a class="item"><i class="settings icon"></i>Department</a>
+						      <div class="ui dropdown item">
+						      	Inventory
+						      	<i class="dropdown icon"></i>
+						      	<div class="menu">
+						      		<a class="item"><i class="globe icon"></i>Inventory Group</a>
+						      		<a class="item"><i class="globe icon"></i>Inventory Category</a>
+						      		<a class="item"><i class="globe icon"></i>Inventory Sub-Category</a>
+						      		<a class="item"><i class="globe icon"></i>Inventory Item</a>
+						      		<a class="item"><i class="globe icon"></i>Unit Measurement</a>
+						      		<a class="item"><i class="globe icon"></i>Inventory Balancee</a>
+						      	</div>
+						      </div>
+						      <div class="ui dropdown item">
+						      	Production
+						      	<i class="dropdown icon"></i>
+						      	<div class="menu">
+						      		<a class="item"><i class="globe icon"></i>Meal Category</a>
+						      		<a class="item"><i class="globe icon"></i>Meal Time </a>
+						      		<a class="item"><i class="globe icon"></i>Special Meal Code</a>
+						      		<a class="item"><i class="globe icon"></i>Raw Material Category</a>
+						      	</div>
+						      </div>
+						      <a class="item"><i class="globe icon"></i>Company Branch</a>
+						    </div>
+						</div>
+						<div class="ui dropdown item">
+						    Administration
+						    <i class="dropdown icon"></i>
+						    <div class="menu">
+						      <a class="item"><i class="edit icon"></i> User Management</a>
+						      <a class="item"><i class="globe icon"></i> Authorization Management</a>
+						      <a class="item"><i class="settings icon"></i> Group Management</a>
+						      <div class="ui dropdown item">
+						      	Synchronize Data
+						      	<i class="dropdown icon"></i>
+						      	<div class="menu">
+						      		<a class="item"><i class="globe icon"></i>Export Master Data</a>
+						      		<a class="item"><i class="globe icon"></i>Import Data</a>
+						      		<a class="item"><i class="globe icon"></i>Synchronize Log</a>
+						      	</div>
+						      </div>
+						      <a class="item"><i class="settings icon"></i>Application Log</a>
+						    </div>
+						</div>
+					</div>
+				</div>
+				<div class="eleven wide column line-divider">
+					<div class="column"> 
+						<div class="ui image label">
+						  Show Filters
+						  <!-- <i class="delete icon"></i> -->
+						</div>
+						<div class="ui label">
+						  <i class="plus icon"  style="color: grey;" onclick="showDiv()"></i>
+						</div>
+					</div>
+					<div class="ui segment dfilter" id="dfilter">
+						<form class="ui large form">
+								<h2> Data Filter </h2>
+							<div class="ui mini form">
+								<div class="field">
+									<div class="ui icon input">
+										<input placeholder="Find" type="text">
+										<i class="search link icon"></i>
+									</div>
+								</div>	
+									<div class="three fields">
+										<div class="field">
+											<div class="ui selection dropdown">
+											  <input type="hidden" name="gender">
+											  <i class="dropdown icon"></i>
+											  <div class="default text"><i class="building icon"></i>Supplier Name </div>
+											  <div class="menu">
+											    <div class="item" data-value="male" data-text="Lorem Ipsum">
+											      <i class="building icon"></i>
+											      Lorem Ipsum
+											    </div>
+											    <div class="item" data-value="female" data-text="Lorem Ipsum">
+											      <i class="building icon"></i>
+											      Lorem Ipsum
+											    </div>
+											  </div>
+											</div>
+										</div>
+										<div class="field">
+											<div class="ui selection dropdown">
+											  <input type="hidden" name="gender">
+											  <i class="dropdown icon"></i>
+											  <div class="default text"><i class="building icon"></i>Receive Status</div>
+											  <div class="menu">
+											    <div class="item" data-value="male" data-text="Lorem Ipsum">
+											      <i class="building icon"></i>
+											      Lorem Ipsum
+											    </div>
+											    <div class="item" data-value="female" data-text="Lorem Ipsum">
+											      <i class="building icon"></i>
+											      Lorem Ipsum
+											    </div>
+											  </div>
+											</div>
+										</div>
+										<div class="field">
+											<div class="ui selection dropdown">
+											  <input type="hidden" name="gender">
+											  <i class="dropdown icon"></i>
+											  <div class="default text"><i class="building icon"></i>Send To (Choose Branch)</div>
+											  <div class="menu">
+											    <div class="item" data-value="male" data-text="Lorem Ipsum">
+											      <i class="building icon"></i>
+											      Lorem Ipsum
+											    </div>
+											    <div class="item" data-value="female" data-text="Lorem Ipsum">
+											      <i class="building icon"></i>
+											      Lorem Ipsum
+											    </div>
+											  </div>
+											</div>
+										</div>
+									</div>
+									<div class="four fields">
+										<div class="field">
+											<input placeholder="Date Start" type="text"> <!-- Date Picker -->
+										</div>
+										<div class="field">
+											<input placeholder="Date End" type="text"> <!-- Date Picker -->
+										</div>
+										<div class="field">
+											<div class="ui selection dropdown">
+											  <input type="hidden" name="gender">
+											  <i class="dropdown icon"></i>
+											  <div class="default text"><i class="building icon"></i>Sort By</div>
+											  <div class="menu">
+											    <div class="item" data-value="male" data-text="Lorem Ipsum">
+											      <i class="building icon"></i>
+											      Lorem Ipsum
+											    </div>
+											    <div class="item" data-value="female" data-text="Lorem Ipsum">
+											      <i class="building icon"></i>
+											      Lorem Ipsum
+											    </div>
+											  </div>
+											</div>
+										</div>
+										<div class="field">
+											<div class="ui selection dropdown">
+											  <input type="hidden" name="gender">
+											  <i class="dropdown icon"></i>
+											  <div class="default text"><i class="building icon"></i>Sort Order</div>
+											  <div class="menu">
+											    <div class="item" data-value="male" data-text="Lorem Ipsum">
+											      <i class="building icon"></i>
+											      Lorem Ipsum
+											    </div>
+											    <div class="item" data-value="female" data-text="Lorem Ipsum">
+											      <i class="building icon"></i>
+											      Lorem Ipsum
+											    </div>
+											  </div>
+											</div>
+										</div>
+									</div>
+									<div class="ui grid">
+										<div class="four wide column centered">
+	  									<button class="ui left floated icon button" onclick="hideDiv()">
+	  										Cancel
+	  									</button>
+											<button class="right floated ui button">
+												Search &nbsp;
+												<i class="search link icon"></i>
+											</button>
+	  								</div>	
+  								</div>
+							</div>
+						</form>
+					</div>
+					<div class="ui basic segment">
+					<select class="ui search dropdown">
+						<option value="">Choose One</option>
+						<option value="a">HEAD OFFICE JAKARTA</option>
+					  <option value="AL">Lorem Ipsum</option>
+					  <option value="AK">Lorem Ipsum</option>
+					  <option value="AZ">Lorem Ipsum</option>
+					  <option value="AR">Lorem Ipsum</option>
+					</select>
+					</div>
+					<table class="ui unstackable small single line table">
+					  <thead>
+					    <tr>
+					      <th>
+  								<input type="checkbox" name="example">
+					      </th>
+					      <th class="one wide">Month</th>
+					      <th class="one wide">BMO</th>
+					      <th class="one wide">MO</th>
+					      <th class="one wide">MR</th>
+					      <th class="one wide">II</th>
+					      <th class="one wide">DO</th>
+					      <th class="one wide">DR</th>
+					      <th class="one wide">PR</th>
+					      <th class="one wide">PO</th>
+					      <th class="one wide">IR</th>
+					      <th class="one wide">DP</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <td><input type="checkbox" name=""></td>
+					      <td>Feb</td>
+					      <td>55,154,997</td>
+					      <td>256,814,460</td>
+					      <td>37,247,345</td>
+					      <td>97,204,850</td>
+					      <td>97,204,850</td>
+					      <td>97,204,850</td>
+					      <td>97,204,850</td>
+					      <td>97,204,850</td>
+					      <td>97,204,850</td>
+					      <td>97,204,850</td>
+					    </tr>
+					    <tr>
+					      <td><input type="checkbox" name=""></td>
+					      <td>Mar</td>
+					      <td>55,154,997</td>
+					      <td>256,814,460</td>
+					      <td>37,247,345</td>
+					      <td>97,204,850</td>
+					      <td>97,204,850</td>
+					      <td>97,204,850</td>
+					      <td>97,204,850</td>
+					      <td>97,204,850</td>
+					      <td>97,204,850</td>
+					      <td>97,204,850</td>
+					    </tr>
+					    <tr>
+					      <td><input type="checkbox" name=""></td>
+					      <td>Apr</td>
+					      <td>55,154,997</td>
+					      <td>256,814,460</td>
+					      <td>37,247,345</td>
+					      <td>97,204,850</td>
+					      <td>97,204,850</td>
+					      <td>97,204,850</td>
+					      <td>97,204,850</td>
+					      <td>97,204,850</td>
+					      <td>97,204,850</td>
+					      <td>97,204,850</td>
+					    </tr>
+					    <tr>
+					      <td><input type="checkbox" name=""></td>
+					      <td>May</td>
+					      <td>55,154,997</td>
+					      <td>256,814,460</td>
+					      <td>37,247,345</td>
+					      <td>97,204,850</td>
+					      <td>97,204,850</td>
+					      <td>97,204,850</td>
+					      <td>97,204,850</td>
+					      <td>97,204,850</td>
+					      <td>97,204,850</td>
+					      <td>97,204,850</td>
+					    </tr>
+					    <tr>
+					      <td><input type="checkbox" name=""></td>
+					      <td>Jun</td>
+					      <td>55,154,997</td>
+					      <td>256,814,460</td>
+					      <td>37,247,345</td>
+					      <td>97,204,850</td>
+					      <td>97,204,850</td>
+					      <td>97,204,850</td>
+					      <td>97,204,850</td>
+					      <td>97,204,850</td>
+					      <td>97,204,850</td>
+					      <td>97,204,850</td>
+					    </tr>
+					    <tr>
+					      <td><input type="checkbox" name=""></td>
+					      <td>Jul</td>
+					      <td>55,154,997</td>
+					      <td>256,814,460</td>
+					      <td>37,247,345</td>
+					      <td>97,204,850</td>
+					      <td>97,204,850</td>
+					      <td>97,204,850</td>
+					      <td>97,204,850</td>
+					      <td>97,204,850</td>
+					      <td>97,204,850</td>
+					      <td>97,204,850</td>
+					    </tr>
+					    
+
+					  </tbody>
+					</table>
+				</div>
+				<div class="one wide column"></div>
+			</div>
+		</div>
+  </body>
+</html>
+
+				   		
+
+
+			  

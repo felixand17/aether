@@ -1,0 +1,72 @@
+<div id="header" class="top fixed">
+  <div class="ui inverted mini header-transparent secondary menu noMargin">
+    <div class="ui container grid stackable">
+      <div class="computer only row">
+        <div class="left menu">
+          <%= link_to desks_path do %>
+            <%= image_tag "logo-sample.png", alt: "Logo", class: "logoSmall" %>
+          <% end %>
+          <% if content_for?(:breadcrumb) %>
+            <div class="ui large breadcrumb topbread">
+              <i class="right chevron icon divider"></i>
+              <div class="section"><%= yield(:breadcrumb) %></div>
+              <% if content_for?(:breadcrumb_secondary) %>
+                <i class="right chevron icon divider"></i>
+                <div class="active section"><%= yield(:breadcrumb_secondary) %></div>
+              <% end %>
+            </div>
+          <% end %>
+        </div>
+
+        <div class="right menu">
+          <div class="item searchWide">
+            <div class="ui icon input">
+              <input type="text" placeholder="Search or type a command (Ctrl + G)">
+              <i class="search link icon"></i>
+            </div>
+          </div>
+          <div class="ui simple dropdown item">
+            Demo User
+            <i class="dropdown icon"></i>
+            <div class="menu">
+              <div class="item">Set Desktop Icons</div>
+              <div class="item">My Settings</div>
+              <div class="item">Reload</div>
+              <div class="item">View Website</div>
+              <div class="divider"></div>
+              <div class="item">Logout</div>
+            </div>
+          </div>
+          <div class="ui simple selection dropdown item language-dropdown">
+            <input type="hidden" name="Language">
+            <i class="dropdown icon language-icon"></i>
+            <div class="text">Language</div>
+            <div class="menu">
+              <div class="item" data-value="1"><i class="us flag"> </i>English</div>
+              <div class="item" data-value="0"><i class="id flag"> </i>Indonesia</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="mobile only row">
+        <a class="launch icon item">
+          <i class="content icon"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="page-title">
+    <div class="ui container grid stackable">
+      <div class="row">
+        <div class="left floated twelve wide column noMargin">
+          <h1><%= yield(:title_page) %></h1>
+        </div>
+        <div class="right aligned four wide column noMargin">
+          <%= yield(:page_menu) %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

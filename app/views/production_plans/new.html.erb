@@ -1,0 +1,46 @@
+<% content_for :title_page, "Production Plan Editor" %>
+<% content_for :breadcrumb, "Prodcution" %>
+<% content_for :page_menu do %>
+  <%= render 'production_plans/shared/form_action_links' %>
+<% end %>
+
+<% content_for :side_menu do %>
+  <%= render 'production_plans/shared/side_navigations' %>
+<% end %>
+
+
+<div id="purchase">
+	<form class="ui form">
+		<div class="ui segment">
+			<div class="ui stackable two column grid">
+			  <div class="seven wide column left floated">
+			  	<div class="field">
+				    <label>Plan No.</label>
+				    <input type="text" name="pq-number" class="disabled field" placeholder="001/CASC-JKT/PP/1014">
+				  </div>
+				  <div class="field">
+				    <label>Customer</label>
+				    <select class="ui dropdown">
+						  <option value="">Choose PR</option>
+						  <option value="1">Lorem Ipsum</option>
+						  <option value="0">Lorem Ipsum</option>
+						</select>
+				  </div>
+			  </div>
+			  <div class="seven wide column right floated">
+			  	<div class="field">
+				    <label>Month Period*</label>
+				    <select class="ui dropdown">
+						  <option value="">October 2014</option>
+						  <option value="1">Lorem Ipsum</option>
+						  <option value="0">Lorem Ipsum</option>
+						</select>
+				  </div>
+			  </div>
+			</div>
+		</div>
+		<div class="ui segment">
+			<div id="calendar"></div>
+		</div>
+	</form>
+</div>

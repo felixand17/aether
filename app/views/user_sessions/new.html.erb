@@ -1,0 +1,72 @@
+<div class="ui middle aligned center aligned grid">
+  <div class="column">
+    <h2 class="ui blue image header">
+      <div class="content">
+        Mercury System Login
+      </div>
+    </h2>
+    <form class="ui large form">
+      <div class="ui stacked segment">
+        <div class="ui item">
+          <%= image_tag 'logo-sample.png', class: 'ui centered tiny image' %>
+        </div>
+        <div class="ui hidden divider"></div>
+        <div class="field">
+          <div class="ui selection dropdown">
+          <input type="hidden" name="gender">
+          <i class="dropdown icon"></i>
+          <div class="default text"><i class="building icon"></i>Choose Company</div>
+          <div class="menu">
+            <div class="item" data-value="male" data-text="Lorem Ipsum">
+              <i class="building icon"></i>
+              Lorem Ipsum
+            </div>
+            <div class="item" data-value="female" data-text="Lorem Ipsum">
+              <i class="building icon"></i>
+              Lorem Ipsum
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="field">
+          <div class="ui selection dropdown">
+          <input type="hidden" name="gender">
+          <i class="dropdown icon"></i>
+          <div class="default text"><i class="marker icon"></i> Location</div>
+          <div class="menu">
+            <div class="item" data-value="male" data-text="Male">
+              <i class="marker icon"></i>
+              Lorem Ipsum
+            </div>
+            <div class="item" data-value="female" data-text="Female">
+              <i class="marker icon"></i>
+              Lorem Ipsum
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="field">
+          <div class="ui left icon input">
+            <i class="user icon"></i>
+            <input type="text" name="username" placeholder="Username">
+          </div>
+        </div>
+        <div class="field">
+          <div class="ui left icon input">
+            <i class="lock icon"></i>
+            <input type="password" name="password" placeholder="Password">
+          </div>
+        </div>
+        <%= link_to desks_path, class: 'ui fluid large blue submit button' do %>
+          Login
+        <% end %>
+      </div>
+
+      <div class="ui error message"></div>
+    </form>
+
+    <div class="message">
+      <p> <i class="copyright icon"></i> Mercury 2.0.0 </p>
+    </div>
+  </div>
+</div>

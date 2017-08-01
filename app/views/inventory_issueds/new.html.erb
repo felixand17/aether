@@ -1,0 +1,115 @@
+<% content_for :title_page, "Inventory Issued" %>
+<% content_for :breadcrumb, "Inventory" %>
+<% content_for :page_menu do %>
+  <%= render 'inventory_issueds/shared/form_action_links' %>
+<% end %>
+
+<% content_for :side_menu do %>
+  <%= render 'inventory_issueds/shared/side_navigations' %>
+<% end %>
+
+<div id="purchase">
+	<form class="ui form">
+		<div class="ui segment">
+			<div class="ui stackable two column grid">
+			  <div class="seven wide column left floated">
+			  	<div class="field">
+				    <label>Issued No.</label>
+				    <input type="text" name="pq-number" class="disabled field" placeholder="PQ Number">
+				  </div>
+				  <div class="field">
+				    <label>Issued Type *</label>
+				    <select class="ui dropdown">
+						  <option value="">Choose Type</option>
+						  <option value="1">Lorem Ipsum</option>
+						  <option value="0">Lorem Ipsum</option>
+						</select>
+				  </div>
+				  <div class="field">
+				    <label>MR. No*</label>
+				    <select class="ui dropdown">
+						  <option value="">Choose Material Request</option>
+						  <option value="1">Lorem Ipsum</option>
+						  <option value="0">Lorem Ipsum</option>
+						</select>
+				  </div>
+				  <div class="field">
+				    <label>Checker*</label>
+				    <select class="ui dropdown">
+						  <option value="">Choose Name</option>
+						  <option value="1">Lorem Ipsum</option>
+						  <option value="0">Lorem Ipsum</option>
+						</select>
+				  </div>
+				  <div class="field">
+				    <label>Cost Center *</label>
+				    <select class="ui dropdown">
+						  <option value="">Choose One</option>
+						  <option value="1">Lorem Ipsum</option>
+						  <option value="0">Lorem Ipsum</option>
+						</select>
+				  </div>
+			  </div>
+			  <div class="seven wide column right floated">
+			  	<div class="field">
+				    <label>Issued Date</label>
+				    <input type="text" name="" class="datepicker-here" data-date-format="dd MM yyyy">
+				  </div>
+				  <div class="field">
+				    <label>Issued By*</label>
+				    <select class="ui dropdown">
+						  <option value="">Choose Name</option>
+						  <option value="1">Lorem Ipsum</option>
+						  <option value="0">Lorem Ipsum</option>
+						</select>
+				  </div>
+				  <div class="field">
+				    <label>Approved by*</label>
+				    <select class="ui dropdown">
+						  <option value="">Choose Name</option>
+						  <option value="1">Lorem Ipsum</option>
+						  <option value="0">Lorem Ipsum</option>
+						</select>
+				  </div>
+				  <div class="field">
+				    <label>Notes</label>
+				    <textarea rows="3"></textarea>
+				  </div>
+			  </div>
+			  <div class="seven wide column centered">
+				  <a class="ui fluid blue button">
+						  Auto Generate By Purchase Request
+					</a>	
+				</div>
+			</div>
+		</div>
+	</form>
+	<div class="ui segment">
+		<table class="ui small single line table">
+		  <thead>
+		    <tr>
+		      <th width="3%">No</th>
+					<th width="20%">ITEM NAME</th>
+					<th width="15%">QTY ISSUED</th>
+					<th width="10%">QTY MR</th>
+					<th width="20%">UNIT</th>
+					<th width="10%">STOCK</th>
+					<th width="10%">AFTER</th>
+					<th width="10%">NOTES</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+		      <td></td>
+		      <td></td>
+		      <td></td>
+		      <td></td>
+		      <td></td>
+		      <td></td>
+		      <td></td>
+		      <td></td>
+		    </tr>
+		  </tbody>
+	  </table>
+	</div>
+</div>

@@ -1,0 +1,51 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  desk:
+    menu:
+      master_data:
+        title: 'Master Data'
+        company_branch: 'Company Branch'
+        customer: 'Customer'
+        supplier: 'Supplier'
+        department: 'Department'
+        submenu:
+          inventory:
+            title: 'Inventory'
+            group: 'Inventory Group'
+            category: 'Inventory Category'
+            sub_category: 'Inventory Sub Category'
+            item: 'Inventory Item'
+            balance: 'Inventory Balance'
+            unit_measurement: 'Unit Measurement'
+          production:
+            title: 'Production'
+            meal_category: 'Meal Category'
+            meal_time: 'Meal Time'
+            special_meal_code: 'Special Meal Code'
+            raw_material_category: 'Raw Material Code'
+      administration:
+        title: 'Administration'
+        user: 'User Management'
+        authorization: 'Authorization Management'
+        group: 'Group Management'
+        log: 'Application Log'

@@ -1,0 +1,191 @@
+<% content_for :title_page, "Meal Menu Editor" %>
+<% content_for :breadcrumb, "Inventory" %>
+<% content_for :page_menu do %>
+  <%= render 'meal_menus/shared/form_action_links' %>
+<% end %>
+
+<% content_for :side_menu do %>
+  <%= render 'meal_menus/shared/side_navigations' %>
+<% end %>
+
+<div id="purchase">
+	<form class="ui form">
+		<div class="ui segment">
+			<div class="ui stackable two column grid">
+			  <div class="seven wide column left floated">
+			  	<div class="field">
+				    <label>Menu Code *</label>
+				    <input type="text" name="pq-number" placeholder="PQ Number">
+				  </div>
+				  <div class="field">
+				    <label>Menu Name *</label>
+				    <input type="text" name="pq-number" placeholder="PQ Number">
+				  </div>
+				  <div class="field">
+				    <label>Customer *</label>
+				    <select class="ui dropdown">
+						  <option value="">Choose PR</option>
+						  <option value="1">Lorem Ipsum</option>
+						  <option value="0">Lorem Ipsum</option>
+						</select>
+				  </div>
+			  </div>
+			  <div class="seven wide column right floated">
+				  <div class="field">
+				    <label>Status*</label>
+				    <select class="ui dropdown">
+						  <option value="">Active</option>
+						  <option value="1">Lorem Ipsum</option>
+						  <option value="0">Lorem Ipsum</option>
+						</select>
+				  </div>
+				  <div class="field">
+				    <label>Category*</label>
+				    <select class="ui dropdown">
+						  <option value="">Select Option</option>
+						  <option value="1">Lorem Ipsum</option>
+						  <option value="0">Lorem Ipsum</option>
+						</select>
+				  </div>
+				  <div class="field">
+				    <label>Replicate From</label>
+				    <select class="ui dropdown">
+						  <option value="">Choose Menu</option>
+						  <option value="1">Lorem Ipsum</option>
+						  <option value="0">Lorem Ipsum</option>
+						</select>
+				  </div>
+			  </div>
+			  <div class="six wide column centered">
+				  <a class="ui fluid blue button">
+						  Replicate Menu
+					</a>	
+				</div>
+			</div>
+		</div>
+		<div class="ui segment">
+			<div class="ui stackable two column grid">
+			  <div class="seven wide column left floated">
+			  	<div class="field">
+				    <label>Sales Price*</label>
+				    <input type="text" name="travel-pass" placeholder="0.00">
+				  </div>
+				  <div class="field">
+				    <label>Calorie*</label>
+				    <input type="text" name="travel-pass" placeholder="">
+				  </div>
+				  <div class="field">
+				    <label>Gram*</label>
+				    <input type="text" name="travel-pass" placeholder="">
+				  </div>
+			  </div>
+			  <div class="seven wide column right floated">
+					<div class="field">
+				    <label>Labour Cost</label>
+				    <input type="text" name="travel-pass" placeholder="0.00">
+				  </div>
+				  <div class="field">
+				    <label>Equipment Cost</label>
+				    <input type="text" name="travel-pass" placeholder="0.00">
+				  </div>
+			  	<div class="field">
+				    <label>Overhead Cost</label>
+				    <input type="text" name="first-name" placeholder="0.00">
+				  </div>
+				</div>
+			</div>
+		</div>
+		<div class="ui segment">
+			<div class="ui top attached tabular menu">
+			  <a class="item active" data-tab="Receiving_Items">Inventory</a>
+			  <a class="item" data-tab="Rejected_Items">Standard Recipe</a>
+			</div>
+			<div class="ui bottom attached tab segment active" data-tab="Receiving_Items">
+			  <table class="ui colapsing small table">
+				  <thead>
+				    <tr>
+				      <th width="3%">No</th>
+				      <th width="30%">NAMA/KODE BARANG</th>
+				      <th width="5%">QUANTITY</th>
+				      <th width="5%">UNIT</th>
+				      <th width="1%"></th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				    	<td>1</td>
+				      <td>
+							  <div class="field">
+							    <select class="ui fluid dropdown">
+									  <option value=""> </option>
+									  <option value="1">Lorem Ipsum</option>
+									  <option value="0">Lorem Ipsum</option>
+									</select>
+							  </div>
+				      </td>
+				      <td>
+				      	<div class="field">
+				      		<input type="text" name="" size="7">
+				      	</div>
+				      </td>
+				      <td>
+				      	<div class="field">
+				      		<input type="text" name="" size="7">
+				      	</div>
+				      </td>
+				      <td><i class="large remove icon"></i></td>
+				    </tr>
+				  </tbody>
+			  </table>
+			</div>
+			<div class="ui bottom attached tab segment" data-tab="Rejected_Items">
+			  <table class="ui colapsing small table">
+				  <thead>
+				    <tr>
+				      <th width="3%">No</th>
+				      <th width="30%">NAMA/KODE BARANG</th>
+				      <th width="5%">QUANTITY</th>
+				      <th width="5%">UNIT</th>
+				      <th width="1%"></th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				    	<td>1</td>
+				      <td>
+							  <div class="field">
+							    <select class="ui fluid dropdown">
+									  <option value=""> </option>
+									  <option value="1">Lorem Ipsum</option>
+									  <option value="0">Lorem Ipsum</option>
+									</select>
+							  </div>
+				      </td>
+				      <td>
+				      	<div class="field">
+				      		<input type="text" name="" size="7">
+				      	</div>
+				      </td>
+				      <td>
+				      	<div class="field">
+				      		<input type="text" name="" size="7">
+				      	</div>
+				      </td>
+				      <td><i class="large remove icon"></i></td>
+				    </tr>
+				  </tbody>
+			  </table>
+			</div>
+		  <div class="ui grid stackable">
+			  <div class="three wide column">
+				  <div class="ui fluid blue vertical animated button" tabindex="4">
+					  <div class="hidden content">Add Row</div>
+					  <div class="visible content">
+					   	<i class="plus icon"></i>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Aether</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= render "shared/side_menu_mobile" %>
+    <%= render "shared/top_menu" %>
+    <!-- container -->
+    <div class="pusher">
+      <div class="ui container">
+        <div class="ui divided grid stackable">
+
+          <% if content_for?(:side_menu) %>
+            <%= yield(:side_menu) %>
+          <% else %>
+            <div class="three wide column"></div>
+          <% end %>
+
+          <div class="thirteen wide column line-divider">
+            <%= yield %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+id:
+  desk:
+    menu:
+      master_data:
+        title: 'Data Master'
+        company_branch: 'Cabang Perusahaan'
+        customer: 'Pelanggan'
+        supplier: 'Pemasok'
+        department: 'Departemen'
+        submenu:
+          inventory:
+            title: 'Persediaan'
+            group: 'Kelompok Persediaan'
+            category: 'Kategori Persediaan'
+            sub_category: 'Sub Kategori Persediaan'
+            item: 'Persediaan Barang'
+            balance: 'Saldo Persediaan'
+            unit_measurement: 'Unit Pengukuran'
+          production:
+            title: 'Produksi'
+            meal_category: 'Kategori Makanan'
+            meal_time: 'Waktu Makan'
+            special_meal_code: 'Kode Makanan Khusus'
+            raw_material_category: 'Kategori Bahan Baku'
+      administration:
+        title: 'Administrasi'
+        user: 'Manajemen Pengguna'
+        authorization: 'Manajemen Otorisasi'
+        group: 'Kelompok Manajemen'
+        log: 'Aplikasi Log'

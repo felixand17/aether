@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="UTF-8">
+	<title>Signup</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.js"></script>
+	<style type="text/css">
+	    {# set default font for website #}
+	    * {
+	        font-family: 'Open Sans', sans-serif !important;
+
+	    }
+	    h1{
+	    	color: #36414c !important;
+	    	font-weight: bold !important;
+	    }
+	    .title{
+	    	font-weight: 500 !important;
+	    	color:#777;
+	    }
+	    .labelform{
+	    	color: #6b8196 !important;
+	    	font-weight: 500 !important;
+	    }
+	    .labelinput{
+	    	background-color : #f0f4f7 !important;
+	    }
+	</style>
+  </head>
+  <body>
+	<div class="ui container">
+		<!-- menu bar -->
+		<div class="ui secondary menu grid">
+		  <div class="four wide column">
+		  	<img src="assets/images/logo.png" class="ui fluid image">
+		  </div>
+		  <div class="right menu">
+		    <a class="item">
+		      Home
+		    </a>
+		    <a class="active item">
+		      Messages
+		  	</a>
+		  	<a class="item">
+		      Friends
+		  	</a>
+		  </div>
+		</div>
+		<!-- end menu bar -->
+		<!-- container -->
+		<hr/>
+		<h1 class="ui center aligned header">
+			Sign Up for ERPNext
+			</h1>
+		<h3 class="ui center aligned disabled header title">
+  			Free for 1 User
+		</h3>
+		<div class="ui hidden divider"></div>
+		<div class="ui hidden divider"></div>
+		<!-- form -->
+		<div class="ui grid centered">
+			<div class="six wide column">
+				<form class="ui form">
+				  <div class="field">
+				    <input type="text" name="first-name" placeholder="example">
+				    <label class="ui labelform header">Your First and Last Name (will appear in your user id)</label>
+				  </div>
+				  <div class="ui hidden divider"></div>
+				  <div class="field">
+				    <input type="text" name="first-name" placeholder="example@example.com">
+				    <label class="ui labelform header">Your Email Address (your login details will be emailed here)</label>
+				  </div>
+				  <div class="ui hidden divider"></div>
+				  <div class="field">
+				    <div class="ui action input">
+					    <input type="text" placeholder="mycompany"/>
+					    <div class="ui labelinput label">.erpnext.com</div>
+					</div>
+					<label class="ui labelform header">Your subdomain i.e. https://mycompany.erpnext.com. <br/> Must contain only letters, no spaces, numbers or special <br/>characters.
+					</label>
+				  </div>
+				  <div class="ui hidden divider"></div>
+				  <div class="ui hidden divider"></div>
+				  <div class="ui grid center aligned">
+				  	<div class="seven wide column">
+				  		<button class="violet fluid ui button" type="submit" style="font-weight: 500;">Setup My Account</button>
+				  	</div>
+				  </div>
+				</form>
+			</div>
+		</div>
+
+	</div>
+  </body>
+</html>

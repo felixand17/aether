@@ -1,0 +1,197 @@
+<% content_for :title_page, "Purchase" %>
+<% content_for :breadcrumb, "Purchasing" %>
+
+<div class="column"> 
+	<div class="ui image label">
+	  Show Filters
+	  <!-- <i class="delete icon"></i> -->
+	</div>
+	<div class="ui label">
+	  <i class="plus icon"  style="color: grey;" onclick="showDiv()"></i>
+	</div>
+</div>
+<div class="ui segment dfilter" id="dfilter">
+	<form class="ui large form">
+			<h2> Data Filter </h2>
+		<div class="ui mini form">
+			<div class="field">
+				<div class="ui icon input">
+					<input placeholder="Find" type="text">
+					<i class="search link icon"></i>
+				</div>
+			</div>	
+				<div class="three fields">
+					<div class="field">
+						<div class="ui selection dropdown">
+						  <input type="hidden" name="gender">
+						  <i class="dropdown icon"></i>
+						  <div class="default text"><i class="building icon"></i>Supplier Name </div>
+						  <div class="menu">
+						    <div class="item" data-value="male" data-text="Lorem Ipsum">
+						      <i class="building icon"></i>
+						      Lorem Ipsum
+						    </div>
+						    <div class="item" data-value="female" data-text="Lorem Ipsum">
+						      <i class="building icon"></i>
+						      Lorem Ipsum
+						    </div>
+						  </div>
+						</div>
+					</div>
+					<div class="field">
+						<div class="ui selection dropdown">
+						  <input type="hidden" name="gender">
+						  <i class="dropdown icon"></i>
+						  <div class="default text"><i class="building icon"></i>Receive Status</div>
+						  <div class="menu">
+						    <div class="item" data-value="male" data-text="Lorem Ipsum">
+						      <i class="building icon"></i>
+						      Lorem Ipsum
+						    </div>
+						    <div class="item" data-value="female" data-text="Lorem Ipsum">
+						      <i class="building icon"></i>
+						      Lorem Ipsum
+						    </div>
+						  </div>
+						</div>
+					</div>
+					<div class="field">
+						<div class="ui selection dropdown">
+						  <input type="hidden" name="gender">
+						  <i class="dropdown icon"></i>
+						  <div class="default text"><i class="building icon"></i>Send To (Choose Branch)</div>
+						  <div class="menu">
+						    <div class="item" data-value="male" data-text="Lorem Ipsum">
+						      <i class="building icon"></i>
+						      Lorem Ipsum
+						    </div>
+						    <div class="item" data-value="female" data-text="Lorem Ipsum">
+						      <i class="building icon"></i>
+						      Lorem Ipsum
+						    </div>
+						  </div>
+						</div>
+					</div>
+				</div>
+				<div class="four fields">
+					<div class="field">
+						<input placeholder="Date Start" type="text"> <!-- Date Picker -->
+					</div>
+					<div class="field">
+						<input placeholder="Date End" type="text"> <!-- Date Picker -->
+					</div>
+					<div class="field">
+						<div class="ui selection dropdown">
+						  <input type="hidden" name="gender">
+						  <i class="dropdown icon"></i>
+						  <div class="default text"><i class="building icon"></i>Sort By</div>
+						  <div class="menu">
+						    <div class="item" data-value="male" data-text="Lorem Ipsum">
+						      <i class="building icon"></i>
+						      Lorem Ipsum
+						    </div>
+						    <div class="item" data-value="female" data-text="Lorem Ipsum">
+						      <i class="building icon"></i>
+						      Lorem Ipsum
+						    </div>
+						  </div>
+						</div>
+					</div>
+					<div class="field">
+						<div class="ui selection dropdown">
+						  <input type="hidden" name="gender">
+						  <i class="dropdown icon"></i>
+						  <div class="default text"><i class="building icon"></i>Sort Order</div>
+						  <div class="menu">
+						    <div class="item" data-value="male" data-text="Lorem Ipsum">
+						      <i class="building icon"></i>
+						      Lorem Ipsum
+						    </div>
+						    <div class="item" data-value="female" data-text="Lorem Ipsum">
+						      <i class="building icon"></i>
+						      Lorem Ipsum
+						    </div>
+						  </div>
+						</div>
+					</div>
+				</div>
+				<div class="ui grid">
+					<div class="four wide column centered">
+						<button class="ui left floated icon button" onclick="hideDiv()">
+							Cancel
+						</button>
+						<button class="right floated ui button">
+							Search &nbsp;
+							<i class="search link icon"></i>
+						</button>
+					</div>	
+				</div>
+		</div>
+	</form>
+</div>
+
+<table class="ui small single line table">
+  <thead>
+    <tr>
+      <th>
+				<input type="checkbox" name="example">
+      </th>
+      <th>Month</th>
+      <th>Jkt</th>
+      <th>BPN</th>
+      <th>TRKN</th>
+      <th>MTWH</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><input type="checkbox" name=""></td>
+      <td>Feb</td>
+      <td>55,154,997</td>
+      <td>256,814,460</td>
+      <td>37,247,345</td>
+      <td>97,204,850</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name=""></td>
+      <td>Mar</td>
+      <td>55,154,997</td>
+      <td>256,814,460</td>
+      <td>37,247,345</td>
+      <td>97,204,850</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name=""></td>
+      <td>Apr</td>
+      <td>55,154,997</td>
+      <td>256,814,460</td>
+      <td>37,247,345</td>
+      <td>97,204,850</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name=""></td>
+      <td>May</td>
+      <td>55,154,997</td>
+      <td>256,814,460</td>
+      <td>37,247,345</td>
+      <td>97,204,850</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name=""></td>
+      <td>Jun</td>
+      <td>55,154,997</td>
+      <td>256,814,460</td>
+      <td>37,247,345</td>
+      <td>97,204,850</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name=""></td>
+      <td>Jul</td>
+      <td>55,154,997</td>
+      <td>256,814,460</td>
+      <td>37,247,345</td>
+      <td>97,204,850</td>
+    </tr>
+
+  </tbody>
+</table>

@@ -1,0 +1,174 @@
+<div class="ui left vertical sidebar menu">
+  <div class="mobile only row">
+    <div class="item">
+      <div class="ui input"><input type="text" placeholder="Search..."></div>
+    </div>
+    <div class="ui dropdown item">
+      Purchasing
+      <i class="active dropdown icon"></i>
+      <div class="menu">
+        <%= link_to purchase_quotations_url, class: "item" do %>
+          Purchase Quotation
+        <% end %>
+        <%= link_to purchase_orders_url, class: "item" do %>
+          Purchase Order
+        <% end %>
+        <%= link_to purchase_returns_url, class: "item" do %>
+          Purchase Return
+        <% end %>
+        <%= link_to direct_purchases_url, class: "item" do %>
+          Direct Purchase
+        <% end %>
+        <%= link_to edit_purchase_order_url(1), class: "item" do %>
+          Purchase Order Update
+        <% end %>
+      </div>
+    </div>
+    <div class="ui dropdown item">
+      Inventory
+      <i class="dropdown icon"></i>
+      <div class="menu">
+        <%= link_to inventory_receives_url, class: "item" do %>
+          Inventory Receives
+        <% end %>
+        <%= link_to delivery_orders_url, class: "item" do %>
+          Delivery Order
+        <% end %>
+        <%= link_to delivery_receives_url, class: "item" do %>
+          Delivery Receives
+        <% end %>
+        <%= link_to inventory_adjustments_url, class: "item" do %>
+          Inventory Adjustment
+        <% end %>
+        <%= link_to purchase_requests_url, class: "item" do %>
+          Purchase Request
+        <% end %>
+      </div>
+    </div>
+    <div class="ui dropdown item">
+      Production
+      <i class="dropdown icon"></i>
+      <div class="menu">
+        <a class="item"> Meal Menu</a>
+        <a class="item"> Standard Recipe</a>
+        <a class="item"> Base Recipe</a>
+        <a class="item"> Production Plan</a>
+        <a class="item"> Production Order</a>
+        <a class="item"> Blanket Material Order</a>
+        <a class="item"> Material Order</a>
+        <a class="item"> Material Request </a>
+        <a class="item"> Meals Count</a>
+      </div>
+    </div>
+    <div class="ui dropdown item">
+      Reports
+      <i class="dropdown icon"></i>
+      <div class="ui secondary vertical menu">
+        <div class="ui dropdown item">
+          Purchasing Reports
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <a class="item"> Blanked PO</a>
+            <a class="item"> Price Rating</a>
+            <a class="item"> Supplier Rating</a>
+            <a class="item"> PO by Volume</a>
+            <a class="item"> PR-PO-RR</a>
+            <a class="item"> PO-Rcv-Supplier</a>
+            <a class="item"> PO-Rcv-Recap</a>
+            <a class="item"> PO-IR-Recap</a>
+            <a class="item"> Purchase Detail</a>
+          </div>
+        </div>
+        <div class="ui dropdown item">
+          Inventory Reports
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <a class="item"> Receiving Report</a>
+            <a class="item"> MR-II Detail Report</a>
+            <a class="item"> On-Time Delivery</a>
+            <a class="item"> Outstanding Report</a>
+            <a class="item"> Outstanding DO Report</a>
+            <a class="item"> PR-PO-Detail Report</a>
+            <a class="item"> DO-DR-Detail Report</a>
+            <a class="item"> Inventory Issued Report</a>
+            <a class="item"> Inventory Adjusment</a>
+            <a class="item"> Slow Moving Report</a>
+            <a class="item"> Inventory Movement</a>
+            <a class="item"> Inventory Reject</a>
+            <a class="item"> In-Spec KPI</a>
+            <a class="item"> Inventory Stock Card</a>
+            <a class="item"> Inventory Stock</a>
+          </div>
+        </div>
+        <div class="ui dropdown item">
+          Production Reports
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <a class="item">MO-PR/DO Report</a>
+            <a class="item">Internal Production Analysis</a>
+            <a class="item">Summary Menu Cost</a>
+            <a class="item">Cost Variance Analysis</a>
+            <a class="item">Internal Menu Cost</a>
+            <a class="item">Cusotmer Menu Cost</a>
+            <a class="item">Production Menu Cost</a>
+            <a class="item">Internal Recipe Cost</a>
+            <a class="item">Customer Recipe Cost</a>
+            <a class="item">Production Recipe Cost</a>
+            <a class="item">Summary Menu Cost</a>
+            <a class="item">Prodution Deviation</a>
+            <a class="item">Inventory on Kitchen</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ui dropdown item">
+      Master Data
+      <i class="dropdown icon"></i>
+      <div class="menu">
+        <a class="item"> Customer</a>
+        <a class="item"> Supplier </a>
+        <a class="item">Department</a>
+        <div class="ui dropdown item">
+          Inventory
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <a class="item">Inventory Group</a>
+            <a class="item">Inventory Category</a>
+            <a class="item">Inventory Sub-Category</a>
+            <a class="item">Inventory Item</a>
+            <a class="item">Unit Measurement</a>
+            <a class="item">Inventory Balancee</a>
+          </div>
+        </div>
+        <div class="ui dropdown item">
+          Production
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <a class="item">Meal Category</a>
+            <a class="item">Meal Time </a>
+            <a class="item">Special Meal Code</a>
+            <a class="item">Raw Material Category</a>
+          </div>
+        </div>
+        <a class="item">Company Branch</a>
+      </div>
+    </div>
+    <div class="ui dropdown item">
+      Administration
+      <i class="dropdown icon"></i>
+      <div class="menu">
+        <a class="item"> User Management</a>
+        <%= link_to authorization_managements_url, class: "item" do %>
+          Authorization Management
+        <% end %>
+        <a class="item"> Group Management</a>
+        <%= link_to group_managements_url, class: "item" do %>
+          Group Management
+        <% end %>
+        <%= link_to application_logs_url, class: "item" do %>
+          Application Log
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

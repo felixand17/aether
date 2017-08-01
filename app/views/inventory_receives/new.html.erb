@@ -1,0 +1,183 @@
+<% content_for :title_page, "Inventory Receive" %>
+<% content_for :breadcrumb, "Inventory" %>
+<% content_for :page_menu do %>
+  <%= render 'inventory_receives/shared/form_action_links' %>
+<% end %>
+
+
+<% content_for :side_menu do %>
+  <%= render 'purchase_returns/shared/side_navigations' %>
+<% end %>
+
+
+<div id="purchase">
+	<form class="ui form">
+		<div class="ui segment">
+			<div class="ui stackable two column grid">
+			  <div class="seven wide column left floated">
+			  	<div class="field">
+				    <label>Receives No.</label>
+				    <input type="text" name="pq-number" class="disabled field" placeholder="PQ Number">
+				  </div>
+				  <div class="field">
+				    <label>Supplier *</label>
+				    <select class="ui dropdown">
+						  <option value="">Choose PR</option>
+						  <option value="1">Lorem Ipsum</option>
+						  <option value="0">Lorem Ipsum</option>
+						</select>
+				  </div>
+				  <div class="field">
+				    <label>PO. Reference*</label>
+				    <select class="ui dropdown">
+						  <option value="">Choose One</option>
+						  <option value="1">Lorem Ipsum</option>
+						  <option value="0">Lorem Ipsum</option>
+						</select>
+				  </div>
+				  <div class="field">
+				    <label>PO No.*</label>
+				    <input type="text" name="travel-pass" placeholder="Travel Pass">
+				  </div>
+				  <div class="field">
+				    <label>Officer*</label>
+				    <select class="ui dropdown">
+						  <option value="">Choose Name</option>
+						  <option value="1">Lorem Ipsum</option>
+						  <option value="0">Lorem Ipsum</option>
+						</select>
+				  </div>
+			  </div>
+			  <div class="seven wide column right floated">
+			  	<div class="field">
+				    <label>Receive Date</label>
+				    <input type="text" name="" class="disableFuture" data-date-format="dd MM yyyy"> 
+				  </div>
+				  <div class="field">
+				    <label>Receive by*</label>
+				    <select class="ui dropdown">
+						  <option value="">Choose Branch</option>
+						  <option value="1">Lorem Ipsum</option>
+						  <option value="0">Lorem Ipsum</option>
+						</select>
+				  </div>
+				  <div class="field">
+				    <label>Approved by*</label>
+				    <select class="ui dropdown">
+						  <option value="">Choose Branch</option>
+						  <option value="1">Lorem Ipsum</option>
+						  <option value="0">Lorem Ipsum</option>
+						</select>
+				  </div>
+				  <div class="field">
+				    <label>Notes</label>
+				    <textarea rows="3"></textarea>
+				  </div>
+			  </div>
+			  <div class="seven wide column centered">
+				  <button class="ui fluid blue button">
+						  Auto Generate By Purchase Request
+					</button>	
+				</div>
+			</div>
+		</div>
+		<div class="ui segment">
+			<div class="ui stackable two column grid">
+			  <div class="seven wide column left floated">
+			  	<div class="field">
+				    <label>Travel Pass*</label>
+				    <input type="text" name="travel-pass" placeholder="Travel Pass">
+				  </div>
+				  <div class="field">
+				    <label>Officer*</label>
+				    <select class="ui dropdown">
+						  <option value="">Choose Name</option>
+						  <option value="1">Lorem Ipsum</option>
+						  <option value="0">Lorem Ipsum</option>
+						</select>
+				  </div>
+			  </div>
+			  <div class="seven wide column right floated">
+				  <div class="field">
+				    <label>Notes</label>
+				    <textarea rows="3"></textarea>
+				  </div>
+			  	<div class="field">
+				    <label>Sender *</label>
+				    <input type="text" name="first-name" placeholder="First Name">
+				  </div>
+				</div>
+			</div>
+		</div>
+		<div class="ui segment">
+			<div class="ui top attached tabular menu">
+			  <a class="item active" data-tab="Receiving_Items">Receiving Items</a>
+			  <a class="item" data-tab="Rejected_Items">Rejected Items</a>
+			</div>
+			<div class="ui bottom attached tab segment active" data-tab="Receiving_Items">
+			  <table class="ui colapsing small table">
+				  <thead>
+				    <tr>
+				      <th width="3%">No</th>
+				      <th width="20%">ITEM NAME</th>
+				      <th width="15%">QTY PO</th>
+				      <th width="10%">QTY RCVD</th>
+				      <th width="20%">QTY OUTSTD</th>
+				      <th width="20%">UNIT</th>
+				      <th width="10%">(F)TEMP</th>
+				      <th width="10%">(T)TEMP</th>
+				      <th width="10%">EXP DATE</th>
+				      <th width="15%">(T)TEMP</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <td></td>
+				      <td></td>
+				      <td></td>
+				      <td></td>
+				      <td></td>
+				      <td></td>
+				      <td></td>
+				      <td></td>
+				      <td></td>
+				      <td></td>
+				    </tr>
+				  </tbody>
+			  </table>
+			</div>
+			<div class="ui bottom attached tab segment" data-tab="Rejected_Items">
+			  <table class="ui colapsing small table">
+				  <thead>
+				    <tr>
+				     <th width="3%">No</th>
+				      <th width="20%">ITEM NAME</th>
+				      <th width="15%">QTY PO</th>
+				      <th width="10%">QTY RCVD</th>
+				      <th width="20%">QTY OUTSTD</th>
+				      <th width="20%">UNIT</th>
+				      <th width="10%">(F)TEMP</th>
+				      <th width="10%">(T)TEMP</th>
+				      <th width="10%">EXP DATE</th>
+				      <th width="15%">(T)TEMP</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <td></td>
+				      <td></td>
+				      <td></td>
+				      <td></td>
+				      <td></td>
+				      <td></td>
+				      <td></td>
+				      <td></td>
+				      <td></td>
+				      <td></td>
+				    </tr>
+				  </tbody>
+			  </table>
+			</div>
+		</div>
+	</form>
+</div>

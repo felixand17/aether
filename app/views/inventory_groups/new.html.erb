@@ -1,0 +1,35 @@
+<% content_for :title_page, "Inventory Group Editor" %>
+<% content_for :breadcrumb, "Master Data" %>
+<% content_for :page_menu do %>
+  <%= render 'inventory_groups/shared/form_action_links' %>
+<% end %>
+
+<% content_for :side_menu do %>
+  <%= render 'inventory_groups/shared/side_navigations' %>
+<% end %>
+
+<div id="purchase">
+	<form class="ui form">
+		<div class="ui segment">
+			<div class="ui stackable two column grid">
+			  <div class="seven wide column left floated">
+			  	<div class="field">
+				    <label>Code*</label>
+				    <input type="text" name="pq-number" placeholder="PQ Number">
+				  </div>
+				  <div class="field">
+				    <label>Group Name*</label>
+				    <input type="text" name="pq-number" placeholder="PQ Number">
+				  </div>
+				  <div class="field">
+				  	<label> Description </label>
+				  	<textarea rows="3"></textarea>
+				  </div>
+			  </div>
+			  <div class="seven wide column right floated">
+			  </div>
+			</div>
+		</div>
+	</form>
+</div>
+

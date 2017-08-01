@@ -1,0 +1,187 @@
+<% content_for :title_page, "Purchase Order Update" %>
+<% content_for :breadcrumb, "Purchasing" %>
+<% content_for :page_menu do %>
+  <%= render 'purchase_orders/shared/form_action_links' %>
+<% end %>
+
+<% content_for :side_menu do %>
+  <%= render 'purchase_orders/shared/side_navigations' %>
+<% end %>
+
+<div id="purchase">
+	<form class="ui form">
+		<div class="ui segment">
+			<div class="ui stackable two column grid">
+			  <div class="seven wide column left floated">
+			  	<div class="field">
+				    <label>PQ Number</label>
+				    <input type="text" name="pq-number" class="disabled field" placeholder="PQ Number">
+				  </div>
+				  <div class="field">
+				    <label>Supplier Name *</label>
+				    <select class="ui dropdown">
+						  <option value="">Choose PR</option>
+						  <option value="1">Lorem Ipsum</option>
+						  <option value="0">Lorem Ipsum</option>
+						</select>
+				  </div>
+				  <div class="field">
+				    <label>Revision Of *</label>
+				    <select class="ui dropdown">
+						  <option value="">Choose One</option>
+						  <option value="1">Lorem Ipsum</option>
+						  <option value="0">Lorem Ipsum</option>
+						</select>
+				  </div>
+				  <div class="field">
+				    <label>PR Number *</label>
+				    <select class="ui dropdown">
+						  <option value="">Choose One</option>
+						  <option value="1">Lorem Ipsum</option>
+						  <option value="0">Lorem Ipsum</option>
+						</select>
+				  </div>
+			  </div>
+			  <div class="seven wide column right floated">
+			  	<div class="field">
+				    <label>PO Date</label>
+				    <input type="text" name="" class="datepicker-here" data-date-format="dd MM yyyy">
+				  </div>
+				  <div class="field">
+				    <label>Send To*</label>
+				    <select class="ui dropdown">
+						  <option value="">Choose Branch</option>
+						  <option value="1">Lorem Ipsum</option>
+						  <option value="0">Lorem Ipsum</option>
+						</select>
+				  </div>
+				  <div class="field">
+				    <label>Destination Address</label>
+				    <textarea rows="3"></textarea>
+				  </div>
+			  </div>
+			  <div class="column centered">
+				  <!-- <button class="ui blue button">
+						  Auto Generate By Purchase Request
+					</button>	 -->
+				</div>
+			</div>
+		</div>
+		<div class="ui segment">
+			<div class="ui stackable two column grid">
+			  <div class="seven wide column left floated">
+			  	<div class="field">
+				    <label>Notes <i class="tiny asterisk icon" aria-hidden="true"></i></label>
+				    <textarea rows="3"></textarea>
+				  </div>
+				  <div class="field">
+				    <label>Expected Date</label>
+				    <input type="text" name="" class="disablePast" data-date-format="dd MM yyyy">
+				  </div>
+			  </div>
+			  <div class="seven wide column right floated">
+			  	<div class="field">
+				    <label>Requested by*</label>
+				    <select class="ui dropdown">
+						  <option value="">Choose Name</option>
+						  <option value="1">Lorem Ipsum</option>
+						  <option value="0">Lorem Ipsum</option>
+						</select>
+				  </div>
+				  <div class="field">
+				    <label>Approved by*</label>
+				    <select class="ui dropdown">
+						  <option value="">Choose Name</option>
+						  <option value="1">Lorem Ipsum</option>
+						  <option value="0">Lorem Ipsum</option>
+						</select>
+				  </div>
+			  </div>
+			</div>
+		</div>
+	</form>
+	<div class="ui segment">
+		<table class="ui colapsing small table">
+		  <thead>
+		    <tr>
+		      <th width="3%">No</th>
+		      <th width="10%">INV ITEM</th>
+		      <th width="10%">QUANTITY</th>
+		      <th width="10%">QTY ORDERED</th>
+		      <th width="10%">QTY APPROVED</th>
+		      <th width="15%">QTY REQUEST OUTSTAND</th>
+		      <th width="10%">UNIT</th>
+		      <th width="20%">PRICE PO</th>
+		      <th width="20%">TAX (%)</th>
+		      <th width="20%">SUBTOTAL</th>
+		      <th width="20%">OUTSTAND QTY RCVD</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+		      <td></td>
+		      <td></td>
+		      <td></td>
+		      <td></td>
+		      <td></td>
+		      <td></td>
+		      <td></td>
+		      <td></td>
+		      <td></td>
+		      <td></td>
+		      <td></td>
+		    </tr>
+		  </tbody>
+	  </table>
+	  <div class="ui right floated basic segment">
+	  <form class="ui form">
+		  <div class="ui stackable two column grid">
+		  	<div class="seven wide column left floated">
+		  		<div class="field">
+		  			<h2> Tax </h2>
+		  		</div>
+		  		<div class="field">
+		  			<h2> Discount(%) </h2>
+		  		</div>
+		  		<div class="field">
+		  			<h2> Freight </h2>
+		  		</div>
+		  		<div class="field">
+		  			<h3> Down Payment </h3>
+		  		</div>
+					<div class="field">
+		  			<h3> Grand Total </h3>
+		  		</div>
+		  	</div>
+		  	<div class="nine wide column right floated">
+		  		<div class="field">
+		  			<div class="ui mini disabled input">
+						  <input type="text" placeholder="Rp.0.00">
+						</div>
+		  		</div>
+		  		<div class="field">
+		  			<div class="ui mini input">
+						  <input type="text" placeholder="0">
+						</div>
+		  		</div>
+		  		<div class="field">
+		  			<div class="ui mini input">
+						  <input type="text" placeholder="0">
+						</div>
+		  		</div>
+		  		<div class="field">
+		  			<div class="ui mini input">
+						  <input type="text" placeholder="0">
+						</div>
+		  		</div>
+		  		<div class="field">
+		  			<div class="ui mini disabled input">
+						  <input type="text" placeholder="Rp.0.00">
+						</div>
+		  		</div>
+		  	</div>
+		  </div>
+		</form>
+		</div>
+	</div>
+</div>

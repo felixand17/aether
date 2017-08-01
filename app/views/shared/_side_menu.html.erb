@@ -1,0 +1,25 @@
+<div class="three wide column">
+  <div class="ui grid stackable">
+      <div class="ui secondary vertical menu forTab">
+        <%= link_to '#masterData', class: "item active", data: { tab: 'masterData' } do %>
+          Master Data
+        <% end %>
+
+        <%= link_to '#administration', class: "item", data: { tab: 'administration' } do %>
+          Administration
+        <% end %>
+
+        <%= link_to '#inventory', class: "item", data: { tab: 'inventory' } do %>
+          Inventory
+        <% end %>
+
+        <%= link_to '#production', class: "item", data: { tab: 'production' } do %>
+          Production
+        <% end %>
+
+        <%= link_to '#purchasing', class: "item", data: { tab: 'purchasing' } do %>
+          Purchasing
+        <% end %>
+      </div>
+  </div>
+</div>

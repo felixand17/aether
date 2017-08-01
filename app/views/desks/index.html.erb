@@ -1,0 +1,249 @@
+<% content_for :title_page, "Modules" %>
+<% content_for :breadcrumb, "Dashboard" %>
+<% content_for :side_menu do %>
+  <%= render "shared/side_menu" %>
+<% end %>
+
+<div id="desk">
+  <div class="ui vertical stripe tab active segment" data-tab="masterData">
+    <div class="ui equal width stackable internally grid">
+      <div class="left aligned row">
+        <div class="column">
+          <h3>Master Data</h3>
+          <div class="ui list">
+            <div class="item">
+              <%= link_to company_branchs_url do %>
+                <%= t('desk.menu.master_data.company_branch') %>
+              <% end %>
+            </div><div class="item">
+              <%= link_to customers_url do %>
+                <%= t('desk.menu.master_data.customer') %>
+              <% end %>
+            </div>
+            <div class="item">
+              <%= link_to suppliers_url do %>
+                <%= t('desk.menu.master_data.supplier') %>
+              <% end %>
+            </div>
+            <div class="item">
+              <%= link_to departments_url do %>
+                <%= t('desk.menu.master_data.department') %>
+              <% end %>
+            </div>
+            <div class="item">
+              <b><%= t('desk.menu.master_data.submenu.inventory.title') %></b>
+              <div class="list">
+                <div class="item">
+                  <%= link_to inventory_groups_url do %>
+                    <%= t('desk.menu.master_data.submenu.inventory.group') %>
+                  <% end %>
+                </div>
+                <div class="item">
+                  <%= link_to inventory_categories_url do %>
+                    <%= t('desk.menu.master_data.submenu.inventory.category') %>
+                  <% end %>
+                </div>
+                <div class="item">
+                  <%= link_to inventory_sub_categories_url do %>
+                    <%= t('desk.menu.master_data.submenu.inventory.sub_category') %>
+                  <% end %>
+                </div>
+                <div class="item">
+                  <%= link_to inventory_items_url do %>
+                    <%= t('desk.menu.master_data.submenu.inventory.item') %>
+                  <% end %>
+                </div>
+                <div class="item">
+                  <%= link_to unit_measurements_url do %>
+                    <%= t('desk.menu.master_data.submenu.inventory.unit_measurement') %>
+                  <% end %>
+                </div>
+                <div class="item">
+                  <%= link_to inventory_balances_url do %>
+                    <%= t('desk.menu.master_data.submenu.inventory.balance') %>
+                  <% end %>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <b><%= t('desk.menu.master_data.submenu.production.title') %></b>
+              <div class="list">
+                <div class="item">
+                  <%= link_to meal_categories_url do %>
+                    <%= t('desk.menu.master_data.submenu.production.meal_category') %>
+                  <% end %>
+                </div>
+                <div class="item">
+                  <%= link_to meal_times_url do %>
+                    <%= t('desk.menu.master_data.submenu.production.meal_time') %>
+                  <% end %>
+                </div>
+                <div class="item">
+                  <%= link_to special_meal_codes_url do %>
+                    <%= t('desk.menu.master_data.submenu.production.special_meal_code') %>
+                  <% end %>
+                </div>
+                <div class="item">
+                  <%= link_to raw_material_categories_url do %>
+                    <%= t('desk.menu.master_data.submenu.production.raw_material_category') %>
+                  <% end %>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ui vertical stripe tab segment" data-tab="administration">
+    <div class="ui equal width stackable internally grid">
+      <div class="left aligned row">
+        <div class="column">
+          <h3>Administration</h3>
+          <div class="item">
+            <a> User Management</a>
+          </div>
+          <div class="item">
+            <%= link_to authorization_managements_url do %>
+              Authorization Management
+            <% end %>
+          </div>
+          <div class="item">
+            <%= link_to group_managements_url do %>
+              Group Management
+            <% end %>
+          </div>
+          <div class="item">
+            <%= link_to application_logs_url do %>
+              Application Log
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui vertical stripe tab segment" data-tab="inventory">
+    <div class="ui equal width stackable internally grid">
+      <div class="left aligned row">
+        <div class="column">
+          <h3>Inventory</h3>
+          <div class="item">
+            <%= link_to inventory_receives_url do %>
+              Inventory Receives
+            <% end %>
+          </div>
+          <div class="item">
+            <%= link_to delivery_orders_url do %>
+              Delivery Order
+            <% end %>
+          </div>
+          <div class="item">
+            <%= link_to delivery_receives_url do %>
+              Delivery Receives
+            <% end %>
+          </div>
+          <div class="item">
+            <%= link_to inventory_adjustments_url do %>
+              Inventory Adjustment
+            <% end %>
+          </div>
+          <div class="item">
+            <%= link_to purchase_requests_url do %>
+              Purchase Request
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui vertical stripe tab segment" data-tab="production">
+    <div class="ui equal width stackable internally grid">
+      <div class="left aligned row">
+        <div class="column">
+          <h3>Production</h3>
+          <div class="item">
+            <%= link_to meal_menus_url do %>
+              Meal Menu
+            <% end %>
+          </div>
+          <div class="item">
+            <%= link_to standard_recipes_url do %>
+              Standard Recipe
+            <% end %>
+          </div>
+          <div class="item">
+            <%= link_to base_recipes_url do %>
+              Base Recipe
+            <% end %>
+          </div>
+          <div class="item">
+            <%= link_to production_plans_url do %>
+              Production Plan
+            <% end %>
+          </div>
+          <div class="item">
+            <%= link_to production_orders_url do %>
+              Production Order
+            <% end %>
+          </div>
+          <div class="item">
+            <%= link_to blanket_material_orders_url do %>
+              Blanket Material Order
+              <div class="item">
+            </div>
+            <% end %><%= link_to material_orders_url do %>
+              Material Order
+            <% end %>
+          </div>
+          <div class="item">
+            <%= link_to material_requests_url do %>
+              Material Request
+            <% end %>
+          </div>
+          <div class="item">
+            <%= link_to meal_counts_url do %>
+              Meal Count
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui vertical stripe tab segment" data-tab="purchasing">
+    <div class="ui equal width stackable internally grid">
+      <div class="left aligned row">
+        <div class="column">
+          <h3>Purchasing</h3>
+          <div class="item">
+            <%= link_to purchase_quotations_url do %>
+              Purchase Quotation
+            <% end %>
+          </div>
+          <div class="item">
+            <%= link_to purchase_orders_url do %>
+              Purchase Order
+            <% end %>
+          </div>
+          <div class="item">
+            <%= link_to purchase_returns_url do %>
+              Purchase Return
+            <% end %>
+          </div>
+          <div class="item">
+            <%= link_to direct_purchases_url do %>
+              Direct Purchase
+            <% end %>
+          </div>
+          <div class="item">
+            <%= link_to edit_purchase_order_url(1) do %>
+              Purchase Order Update
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

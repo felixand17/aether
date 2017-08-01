@@ -1,0 +1,135 @@
+<div class="column" id= "filtering">
+  <button class="ui mini button" onclick="showFilterContent()">
+    <i class="plus icon"></i>
+    Show Filter
+  </button>
+</div>
+<div class="ui segment dfilter" id="dfilter">
+  <form class="ui large form">
+      <h2> Data Filter </h2>
+    <div class="ui mini form">
+      <div class="field">
+        <label>Find</label>
+        <div class="ui icon input">
+          <input placeholder="Find" type="text">
+          <i class="search link icon"></i>
+        </div>
+      </div>
+        <div class="three fields">
+          <div class="field">
+            <label> Supplier Name</label>
+            <div class="ui selection dropdown">
+              <input type="hidden" name="gender">
+              <i class="dropdown icon"></i>
+              <div class="default text"><i class="building icon"></i>Supplier Name </div>
+              <div class="menu">
+                <div class="item" data-value="male" data-text="Lorem Ipsum">
+                  <i class="building icon"></i>
+                  Lorem Ipsum
+                </div>
+                <div class="item" data-value="female" data-text="Lorem Ipsum">
+                  <i class="building icon"></i>
+                  Lorem Ipsum
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="field">
+            <label>Receive Status</label>
+            <div class="ui selection dropdown">
+              <input type="hidden" name="gender">
+              <i class="dropdown icon"></i>
+              <div class="default text"><i class="building icon"></i>Receive Status</div>
+              <div class="menu">
+                <div class="item" data-value="male" data-text="Lorem Ipsum">
+                  <i class="building icon"></i>
+                  Lorem Ipsum
+                </div>
+                <div class="item" data-value="female" data-text="Lorem Ipsum">
+                  <i class="building icon"></i>
+                  Lorem Ipsum
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="field">
+            <label>Send To (Choose Branch)</label>
+            <div class="ui selection dropdown">
+              <input type="hidden" name="gender">
+              <i class="dropdown icon"></i>
+              <div class="default text"><i class="building icon"></i>Send To (Choose Branch)</div>
+              <div class="menu">
+                <div class="item" data-value="male" data-text="Lorem Ipsum">
+                  <i class="building icon"></i>
+                  Lorem Ipsum
+                </div>
+                <div class="item" data-value="female" data-text="Lorem Ipsum">
+                  <i class="building icon"></i>
+                  Lorem Ipsum
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="four fields">
+          <div class="field">
+            <label>Date Start</label>
+            <input placeholder="Date Start" type="text"> <!-- Date Picker -->
+          </div>
+          <div class="field">
+          <label>Date End</label>
+            <input placeholder="Date End" type="text"> <!-- Date Picker -->
+          </div>
+          <div class="field">
+            <label>Sort By</label>
+            <div class="ui selection dropdown">
+              <input type="hidden" name="gender">
+              <i class="dropdown icon"></i>
+              <div class="default text"><i class="building icon"></i>Sort By</div>
+              <div class="menu">
+                <div class="item" data-value="male" data-text="Lorem Ipsum">
+                  <i class="building icon"></i>
+                  Lorem Ipsum
+                </div>
+                <div class="item" data-value="female" data-text="Lorem Ipsum">
+                  <i class="building icon"></i>
+                  Lorem Ipsum
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="field">
+            <label>Sort Order</label>
+            <div class="ui selection dropdown">
+              <input type="hidden" name="gender">
+              <i class="dropdown icon"></i>
+              <div class="default text"><i class="building icon"></i>Sort Order</div>
+              <div class="menu">
+                <div class="item" data-value="male" data-text="Lorem Ipsum">
+                  <i class="building icon"></i>
+                  Lorem Ipsum
+                </div>
+                <div class="item" data-value="female" data-text="Lorem Ipsum">
+                  <i class="building icon"></i>
+                  Lorem Ipsum
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ui grid">
+          <div class="four wide column centered">
+            <a class="ui left floated icon button" onclick="hideFilterContent()">
+              Cancel
+            </a>
+            <div class="ui green animated fade button" tabindex="0">
+              <div class="visible content">Apply</div>
+              <div class="hidden content">
+                <i class="search link icon"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </form>
+</div>

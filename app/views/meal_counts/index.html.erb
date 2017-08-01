@@ -1,0 +1,76 @@
+<% content_for :title_page, "Meal Counts" %>
+<% content_for :breadcrumb, "Production" %>
+<% content_for :page_menu do %>
+  <%= render 'meal_counts/shared/action_links' %>
+<% end %>
+
+<% content_for :side_menu do %>
+  <%= render 'meal_counts/shared/side_navigations' %>
+<% end %>
+
+<%= render 'meal_counts/shared/filters' %>
+
+<table class="ui small single line table">
+  <thead>
+    <tr>
+      <th>
+				<input type="checkbox" name="example">
+      </th>
+      <th>Month</th>
+      <th>Jkt</th>
+      <th>BPN</th>
+      <th>TRKN</th>
+      <th>MTWH</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><input type="checkbox" name=""></td>
+      <td>Feb</td>
+      <td>55,154,997</td>
+      <td>256,814,460</td>
+      <td>37,247,345</td>
+      <td>97,204,850</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name=""></td>
+      <td>Mar</td>
+      <td>55,154,997</td>
+      <td>256,814,460</td>
+      <td>37,247,345</td>
+      <td>97,204,850</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name=""></td>
+      <td>Apr</td>
+      <td>55,154,997</td>
+      <td>256,814,460</td>
+      <td>37,247,345</td>
+      <td>97,204,850</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name=""></td>
+      <td>May</td>
+      <td>55,154,997</td>
+      <td>256,814,460</td>
+      <td>37,247,345</td>
+      <td>97,204,850</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name=""></td>
+      <td>Jun</td>
+      <td>55,154,997</td>
+      <td>256,814,460</td>
+      <td>37,247,345</td>
+      <td>97,204,850</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name=""></td>
+      <td>Jul</td>
+      <td>55,154,997</td>
+      <td>256,814,460</td>
+      <td>37,247,345</td>
+      <td>97,204,850</td>
+    </tr>
+  </tbody>
+</table>

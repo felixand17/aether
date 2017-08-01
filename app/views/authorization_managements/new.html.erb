@@ -1,0 +1,70 @@
+<% content_for :title_page, "Authorization Management" %>
+<% content_for :breadcrumb, "Administration" %>
+<% content_for :page_menu do %>
+  <button class="ui blue button">Save</button>
+  <button class="ui green button">Save & Continue</button>
+<% end %>
+<% content_for :side_menu do %>
+  <%= render 'authorization_managements/shared/side_navigations' %>
+<% end %>
+
+<div id="purchase">
+  <form class="ui form">
+    <div class="ui segment">
+      <div class="inline fields">
+        <div class="left floated eight wide field">
+          <label for="group">Group:</label>
+          <select id="group" class="ui search dropdown">
+            <option value="Group 1">Group 1</option>
+            <option value="Group 2">Group 2</option>
+            <option value="Group 3">Group 3</option>
+          </select>
+        </div>
+      </div>
+      <table class="ui colapsing small table">
+        <thead>
+          <tr>
+            <th rowspan="2" class="center aligned">NO</th>
+            <th rowspan="2">SCOPE</th>
+            <th class="center aligned">VIEW</th>
+            <th class="center aligned">EDIT</th>
+            <th class="center aligned">DELETE</th>
+            <th class="center aligned">INSERT</th>
+          </tr>
+          <tr>
+            <th class="center aligned"><%= check_box_tag :view_all, nil %></th>
+            <th class="center aligned"><%= check_box_tag :view_all, nil %></th>
+            <th class="center aligned"><%= check_box_tag :view_all, nil %></th>
+            <th class="center aligned"><%= check_box_tag :view_all, nil %></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="center aligned">1</td>
+            <td>Irregular Production</td>
+            <td class="center aligned"><%= check_box_tag :view_all, nil %></td>
+            <td class="center aligned"><%= check_box_tag :view_all, nil %></td>
+            <td class="center aligned"><%= check_box_tag :view_all, nil %></td>
+            <td class="center aligned"><%= check_box_tag :view_all, nil %></td>
+          </tr>
+          <tr>
+            <td class="center aligned">2</td>
+            <td>Base Recipe</td>
+            <td class="center aligned"><%= check_box_tag :view_all, nil %></td>
+            <td class="center aligned"><%= check_box_tag :view_all, nil %></td>
+            <td class="center aligned"><%= check_box_tag :view_all, nil %></td>
+            <td class="center aligned"><%= check_box_tag :view_all, nil %></td>
+          </tr>
+          <tr>
+            <td class="center aligned">3</td>
+            <td>Location</td>
+            <td class="center aligned"><%= check_box_tag :view_all, nil %></td>
+            <td class="center aligned"><%= check_box_tag :view_all, nil %></td>
+            <td class="center aligned"><%= check_box_tag :view_all, nil %></td>
+            <td class="center aligned"><%= check_box_tag :view_all, nil %></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </form>
+</div>

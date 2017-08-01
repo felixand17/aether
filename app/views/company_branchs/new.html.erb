@@ -1,0 +1,113 @@
+<% content_for :title_page, "Branch Editor" %>
+<% content_for :breadcrumb, "Master Data" %>
+<% content_for :page_menu do %>
+  <%= render 'company_branchs/shared/form_action_links' %>
+<% end %>
+
+<% content_for :side_menu do %>
+  <%= render 'company_branchs/shared/side_navigations' %>
+<% end %>
+
+<div id="purchase">
+	<form class="ui form">
+		<div class="ui segment">
+			<div class="ui stackable two column grid">
+			  <div class="seven wide column left floated">
+			  	<div class="field">
+				    <label>Branch Name*</label>
+				    <input type="text" name="pq-number" class="disabled field" placeholder="">
+				  </div>
+				  <div class="field">
+				    <label>Branch Code*</label>
+				    <input type="text" name="pq-number" class="disabled field" placeholder="">
+				  </div>
+				  <div class="field">
+				    <label>Location Type *</label>
+				    <select class="ui dropdown">
+						  <option value="">Head Office</option>
+						  <option value="1">Lorem Ipsum</option>
+						  <option value="0">Lorem Ipsum</option>
+						</select>
+				  </div>
+			  </div>
+			  <div class="seven wide column right floated">
+			  	<div class="field">
+				    <label>Statis*</label>
+				    <select class="ui dropdown">
+						  <option value="">Active</option>
+						  <option value="1">Lorem Ipsum</option>
+						  <option value="0">Lorem Ipsum</option>
+						</select>
+				  </div>
+			  </div>
+			</div>
+		</div>
+		<div class="ui segment">
+			<div class="ui stackable two column grid">
+			  <div class="seven wide column left floated">
+		  	  <h3 class="ui center aligned grey header">
+				    Contact Person
+				  </h3>
+			  	<div class="field">
+				    <label>Name</label>
+				    <input type="text" name="travel-pass" placeholder="">
+				  </div>
+				  <div class="field">
+				    <label>Position</label>
+				    <input type="text" name="travel-pass" placeholder="">
+				  </div>
+				  <div class="field">
+				    <label>Email</label>
+				    <input type="email" name="travel-pass" placeholder="">
+				  </div>
+				  <div class="field">
+				    <label>Phone</label>
+				    <input type="number" name="travel-pass" placeholder="">
+				  </div>
+				  <div class="field">
+				    <label>Fax</label>
+				    <input type="number" name="travel-pass" placeholder="">
+				  </div>
+				  <div class="field">
+				    <label>Mobile Phone</label>
+				    <input type="number" name="travel-pass" placeholder="">
+				  </div>
+			  </div>
+			  <div class="seven wide column right floated">
+				  <div class="field">
+				    <label>Addres 1</label>
+				    <textarea rows="3"></textarea>
+				  </div>
+				  <div class="field">
+				    <label>Addres 2</label>
+				    <textarea rows="3"></textarea>
+				  </div>
+				  <div class="field">
+				    <label>Addres 3</label>
+				    <textarea rows="3"></textarea>
+				  </div>
+				 	<div class="field">
+				    <label>City</label>
+				    <input type="text" name="travel-pass" placeholder="">
+				  </div>
+				  <div class="field">
+				    <label>Zip Code</label>
+				    <input type="text" name="travel-pass" placeholder="">
+				  </div>
+				   <div class="field">
+				    <label>Phone</label>
+				    <input type="number" name="travel-pass" placeholder="">
+				  </div>
+				   <div class="field">
+				    <label>Fax</label>
+				    <input type="number" name="travel-pass" placeholder="">
+				  </div>
+				   <div class="field">
+				    <label>Email</label>
+				    <input type="email" name="travel-pass" placeholder="">
+				  </div>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>

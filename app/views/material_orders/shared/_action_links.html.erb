@@ -1,0 +1,18 @@
+<%= link_to new_material_order_url,class: "ui blue button buttonAction" do %>
+    <i class="file outlione icon"></i>
+    New
+<% end %>
+<div class="ui compact menu">
+  <div class="ui simple dropdown item">
+    More
+    <i class="dropdown icon"></i>
+    <div class="menu">
+       <%= link_to '#', class: "item", onclick: 'window.print();return false;' do %>
+        <i class="print icon"></i>
+        Print
+       <% end %> 
+      <div class="item">Option 2</div>
+      <div class="item">Choice 3</div>
+    </div>
+  </div>
+</div>

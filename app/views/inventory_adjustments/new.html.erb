@@ -1,0 +1,157 @@
+<% content_for :title_page, "Inventory Adjustment" %>
+<% content_for :breadcrumb, "Inventory" %>
+<% content_for :page_menu do %>
+  <%= render 'inventory_adjustments/shared/form_action_links' %>
+<% end %>
+
+<% content_for :side_menu do %>
+  <%= render 'inventory_adjustments/shared/side_navigations' %>
+<% end %>
+
+<div id="purchase">
+	<form class="ui form">
+		<div class="ui segment">
+			<div class="ui stackable two column grid">
+			  <div class="seven wide column left floated">
+			  	<div class="field">
+				    <label>Adjustment No.</label>
+				    <input type="text" name="pq-number" class="disabled field" placeholder="PQ Number">
+				  </div>
+				  <div class="field">
+				    <label>Adjust Type *</label>
+				    <select class="ui dropdown">
+						  <option value="">Choose Type</option>
+						  <option value="1">Lorem Ipsum</option>
+						  <option value="0">Lorem Ipsum</option>
+						</select>
+				  </div>
+			  </div>
+			  <div class="seven wide column right floated">
+			  	<div class="field">
+				    <label>Adjust Date *</label>
+				    <input type="text" name="" class="datepicker-here" data-date-format="dd MM yyyy">
+				  </div>
+			  </div>
+			  <div class="seven wide column centered">
+				  <a class="ui fluid blue button">
+						  Auto Generate By Purchase Request
+					</a>	
+				</div>
+			</div>
+		</div>
+		<div class="ui segment">
+			<div class="ui stackable two column grid">
+			  <div class="seven wide column left floated">
+			  	<div class="field">
+				    <label>Reference No</label>
+				    <input type="text" name="travel-pass" placeholder="Travel Pass">
+				  </div>
+				  <div class="field">
+				    <label>Officer*</label>
+				    <select class="ui dropdown">
+						  <option value="">Choose Name</option>
+						  <option value="1">Lorem Ipsum</option>
+						  <option value="0">Lorem Ipsum</option>
+						</select>
+				  </div>
+				  <div class="field">
+				    <label>Adjust By*</label>
+				    <select class="ui dropdown">
+						  <option value="">Choose Name</option>
+						  <option value="1">Lorem Ipsum</option>
+						  <option value="0">Lorem Ipsum</option>
+						</select>
+				  </div>
+				  <div class="field">
+				    <label>Approved By*</label>
+				    <select class="ui dropdown">
+						  <option value="">Choose Name</option>
+						  <option value="1">Lorem Ipsum</option>
+						  <option value="0">Lorem Ipsum</option>
+						</select>
+				  </div>
+			  </div>
+			  <div class="seven wide column right floated">
+				  <div class="field">
+				    <label>Notes</label>
+				    <textarea rows="3"></textarea>
+				  </div>
+				  <div class="field">
+				    <label>Customer</label>
+				    <select class="ui dropdown">
+						  <option value="">Choose Customer</option>
+						  <option value="1">Lorem Ipsum</option>
+						  <option value="0">Lorem Ipsum</option>
+						</select>
+				  </div>
+				  <div class="field">
+				    <label>Supplier</label>
+				    <select class="ui dropdown">
+						  <option value="">Choose One</option>
+						  <option value="1">Lorem Ipsum</option>
+						  <option value="0">Lorem Ipsum</option>
+						</select>
+				  </div>
+				</div>
+			</div>
+		</div>
+		<div class="ui segment">
+			<table class="ui small single line table">
+			  <thead>
+			    <tr>
+			      <th width="3%">No</th>
+						<th width="20%">ITEM NAME</th>
+						<th width="5%">QTY</th>
+						<th width="5%">UNIT</th>
+						<th width="20%">PRICE ENTRY/TYPE</th>
+						<th width="10%">PRICE</th>
+						<th width="10%">NOTES</th>
+						<th width="1%"> </th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      <td> 1 </td>
+			      <td>
+			      	<select class="ui dropdown">
+							  <option value=""></option>
+							  <option value="1">Lorem Ipsum</option>
+							  <option value="0">Lorem Ipsum</option>
+							</select>
+			      </td>
+			      <td>
+			      	<input type="text" name="" size="2">
+			      </td>
+			      <td>
+			      	<input type="text" name="" size="2">
+			      </td>
+			      <td>
+			      	<select class="ui dropdown">
+							  <option value="">Choose One</option>
+							  <option value="1">Lorem Ipsum</option>
+							  <option value="0">Lorem Ipsum</option>
+							</select>
+			      </td>
+			      <td>
+			      	<input type="text" name="" size="4">
+			      </td>
+			      <td>
+			      	<input type="text" name="">
+			      </td>
+			      <td> <i class="large remove icon"></i></td>
+			    </tr>
+			  </tbody>
+		  </table>
+		  <div class="ui grid stackable">
+			  <div class="three wide column">
+				  <div class="ui fluid blue vertical animated button" tabindex="4">
+					  <div class="hidden content">Add Row</div>
+					  <div class="visible content">
+					   	<i class="plus icon"></i>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
